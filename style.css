@@ -1,0 +1,97 @@
+/* Custom Futuristic CSS variables & systems */
+
+:root {
+  --color-primary: #050505;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-primary);
+}
+
+/* Sci-fi tech grid-lines background blueprint */
+.bg-grid-lines {
+  background-image: 
+    linear-gradient(to right, var(--bg-grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--bg-grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Glowing pointer highlight effects */
+.glow-marker {
+  box-shadow: 0 0 10px var(--accent);
+}
+
+/* Scanning interference panel animation wrapper */
+.scanline {
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.02) 10%,
+    rgba(0, 0, 0, 0.08) 11%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0.15;
+  position: fixed;
+  bottom: 100%;
+  left: 0;
+  pointer-events: none;
+  z-index: 100;
+  animation: scanningEffect 8s linear infinite;
+}
+
+@keyframes scanningEffect {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(calc(100vh + 120px)); }
+}
+
+/* Sci-fi HUD Border Corners */
+.hud-corner {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-color: var(--accent);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.hud-corner.top-l {
+  top: 20px;
+  left: 20px;
+  border-top-width: 2px;
+  border-left-width: 2px;
+}
+
+.hud-corner.top-r {
+  top: 20px;
+  right: 20px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+}
+
+.hud-corner.bottom-l {
+  bottom: 20px;
+  left: 20px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+}
+
+.hud-corner.bottom-r {
+  bottom: 20px;
+  right: 20px;
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+}
+
+/* Slow spin visual rotation */
+.animate-spin-slow {
+  animation: spinSlow 36s linear infinite;
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Fikri Makhzumy | Portfolio CV Futuristik</title>
+  <!-- Google Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Link custom stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            accent: 'var(--accent)'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="leading-normal antialiased min-h-screen relative p-4 md:p-10 bg-[#050505] text-slate-300 font-sans" style="--accent: #22d3ee; --accent-glow: rgba(34, 211, 238, 0.4); --bg-grid: rgba(255, 255, 255, 0.015);">
+  
+  <!-- Ambient Scanline and Overlay decorative panels -->
+  <div class="scanline"></div>
+  <div class="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-black/5 to-transparent pointer-events-none"></div>
+
+  <!-- Real HUD style corner decorations -->
+  <div class="hud-corner top-l"></div>
+  <div class="hud-corner top-r"></div>
+  <div class="hud-corner bottom-l"></div>
+  <div class="hud-corner bottom-r"></div>
+
+  <div class="max-w-4xl mx-auto relative z-10 flex flex-col gap-8">
+    
+    <!-- HEADER BOX SECTION -->
+    <header class="flex flex-col md:flex-row gap-6 md:items-center justify-between p-6 rounded-xl border border-white/5 bg-black/40 backdrop-blur-md">
+      <div class="flex flex-col md:flex-row gap-6 items-center">
+        <!-- Avatar Block with Rotating Rings -->
+        <div class="relative w-28 h-28 flex items-center justify-center">
+          <div class="absolute inset-0 rounded-full border border-dashed border-accent/40 animate-spin-slow"></div>
+          <div class="absolute -inset-1 rounded-full border border-accent/10"></div>
+          <img 
+            src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=300&h=300&fit=crop" 
+            alt="Ahmad Fikri Makhzumy" 
+            class="w-24 h-24 rounded-full border-2 border-accent object-cover z-10"
+            referrerpolicy="no-referrer"
+          >
+          <div class="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-zinc-950 z-20 flex items-center justify-center">
+            <span class="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"></span>
+          </div>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h1 class="text-3xl font-extrabold tracking-tight text-white mb-1.5 font-mono drop-shadow-[0_2px_10px_rgba(255,255,255,0.1)]">
+            Ahmad Fikri Makhzumy
+          </h1>
+          <p class="text-accent font-mono text-xs tracking-wider uppercase font-semibold typing-title">
+            Computer Systems Engineer & IoT Specialist
+          </p>
+          
+          <!-- Metadata Status indicators -->
+          <div class="flex flex-wrap gap-2 justify-center md:justify-start mt-3">
+            <span class="px-2 py-0.5 text-[10px] rounded bg-white/5 border border-white/10 text-zinc-400 font-mono">
+              LOC: Tangerang
+            </span>
+            <span class="px-2 py-0.5 text-[10px] rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono">
+              STATUS: SECURE_LIVE
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Network Channels -->
+      <div class="flex flex-col gap-2.5 text-xs font-mono text-zinc-400 border-t md:border-t-0 border-white/10 pt-4 md:pt-0">
+        <div class="flex items-center gap-2 hover:text-white transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span class="select-all">ahmadfikrimakhzumy2905@gmail.com</span>
+        </div>
+        
+        <div class="flex items-center gap-2 hover:text-white transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span class="select-all">082113289940</span>
+        </div>
+        
+        
+        <a href="https://github.com/ahmadfikrimakhzumy" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors hover:underline">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span class="truncate max-w-[170px]">github.com/ahmadfikrimakhzumy</span>
+        </a>
+        
+        
+        <a href="https://linkedin.com/in/ahmadfikrimakhzumy" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 hover:text-white transition-colors hover:underline">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          <span class="truncate max-w-[170px]">linkedin.com/in/ahmadfikrimakhzumy</span>
+        </a>
+        
+      </div>
+    </header>
+
+    <!-- METABOX BENTO / QUICK STATS -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      
+          <div class="bg-black/30 border border-white/5 rounded-xl p-4 flex items-center gap-3.5 group hover:border-white/10 transition-colors">
+            <div class="p-2 rounded-lg bg-accent/10 text-accent group-hover:bg-accent/20 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2" ry="2"></rect><path d="M9 1v4m6-4v4M9 19v4m6-4v4m4-14h4m-4 6h4M1 9h4m-4 6h4"></path></svg>
+            </div>
+            <div>
+              <div class="text-[10px] text-zinc-400 font-mono uppercase tracking-wider">IoT Prototypes</div>
+              <div class="text-lg font-bold font-mono text-white mt-0.5">8+</div>
+            </div>
+          </div>
+  
+
+          <div class="bg-black/30 border border-white/5 rounded-xl p-4 flex items-center gap-3.5 group hover:border-white/10 transition-colors">
+            <div class="p-2 rounded-lg bg-accent/10 text-accent group-hover:bg-accent/20 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <div>
+              <div class="text-[10px] text-zinc-400 font-mono uppercase tracking-wider">Network Sync</div>
+              <div class="text-lg font-bold font-mono text-white mt-0.5">99.9%</div>
+            </div>
+          </div>
+  
+
+          <div class="bg-black/30 border border-white/5 rounded-xl p-4 flex items-center gap-3.5 group hover:border-white/10 transition-colors">
+            <div class="p-2 rounded-lg bg-accent/10 text-accent group-hover:bg-accent/20 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><line x1="3" y1="12" x2="9" y2="12"></line><line x1="15" y1="12" x2="21" y2="12"></line></svg>
+            </div>
+            <div>
+              <div class="text-[10px] text-zinc-400 font-mono uppercase tracking-wider">Org Projects</div>
+              <div class="text-lg font-bold font-mono text-white mt-0.5">12+</div>
+            </div>
+          </div>
+  
+
+          <div class="bg-black/30 border border-white/5 rounded-xl p-4 flex items-center gap-3.5 group hover:border-white/10 transition-colors">
+            <div class="p-2 rounded-lg bg-accent/10 text-accent group-hover:bg-accent/20 transition-colors">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+            </div>
+            <div>
+              <div class="text-[10px] text-zinc-400 font-mono uppercase tracking-wider">Hadroh Events</div>
+              <div class="text-lg font-bold font-mono text-white mt-0.5">32+</div>
+            </div>
+          </div>
+  
+    </div>
+
+    <!-- MAIN DUAL BODY LAYOUT -->
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+      
+      <!-- LEFT AREA: Bio, Experiences, Projects -->
+      <div class="md:col-span-8 flex flex-col gap-8">
+        
+        <!-- Bio and Vision profile section -->
+        <section class="bg-black/40 backdrop-blur-md border border-white/10 hover:border-cyan-500/25 transition-all duration-300 p-6 rounded-xl hover:border-white/10 transition-colors">
+          <h2 class="flex items-center gap-2.5 font-mono text-xs tracking-widest uppercase font-bold text-white mb-4 border-b border-white/5 pb-2.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            Profil & Core Vision
+          </h2>
+          <p class="text-zinc-300 text-sm leading-relaxed m-0 whitespace-pre-wrap">Mahasiswa aktif S1 Sistem Komputer di Universitas Pamulang dengan dedikasi tinggi pada rekayasa sirkuit digital, instalasi jaringan, Internet of Things (IoT), dan administrasi infrastruktur sistem komputer. Memiliki pengalaman kepemimpinan yang solid sebagai ketua organisasi Rohis, berfokus pada kolaborasi kelompok, komunikasi asertif, serta penerapan keahlian teknis untuk solusi praktis.</p>
+        </section>
+
+        <!-- Dynamic Experiences Section -->
+        <section class="bg-black/40 backdrop-blur-md border border-white/10 hover:border-cyan-500/25 transition-all duration-300 p-6 rounded-xl hover:border-white/10 transition-colors">
+          <h2 class="flex items-center gap-2.5 font-mono text-xs tracking-widest uppercase font-bold text-white mb-6 border-b border-white/5 pb-2.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            Timeline Pengalaman Kerja
+          </h2>
+          <div class="relative pl-1">
+            
+              <div class="flex flex-col gap-8 relative">
+                <!-- Vertical timeline backbone connector line -->
+                <div class="absolute top-2 bottom-2 left-[5px] w-[1px] bg-white/10"></div>
+                
+              <div class="relative pl-8 group">
+                <!-- Timeline dot with glowing effect -->
+                <div class="absolute left-0 top-1.5 w-2.5 h-2.5 rounded-full border-2 border-zinc-950 bg-accent glow-marker"></div>
+                
+                <div class="flex flex-wrap items-start justify-between gap-2 mb-2">
+                  <div>
+                    <h3 class="text-base font-bold text-white group-hover:text-white/90 transition-colors m-0">
+                      Ketua Umum
+                    </h3>
+                    <p class="text-accent font-mono text-xs font-semibold m-0">
+                      Organisasi Rohis 14
+                    </p>
+                  </div>
+                  <span class="px-2 py-0.5 text-[10px] rounded-full border border-white/10 bg-white/5 font-mono text-zinc-400">
+                    2021 - 2023
+                  </span>
+                </div>
+
+                <p class="text-zinc-300 text-sm leading-relaxed mb-3 whitespace-pre-wrap">Memimpin manajemen organisasi kepemudaan dengan fokus pada pembinaan disiplin spiritual dan koordinasi 30+ staf aktif. Menyelenggarakan festival kebudayaan dan membina grup seni musik hadroh, mengedukasi anggota baru serta mengelola alokasi anggaran kegiatan dakwah secara berkala.</p>
+                
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="px-2 py-0.5 text-[10px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Kepemimpinan</span><span class="px-2 py-0.5 text-[10px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Manajemen Staf</span><span class="px-2 py-0.5 text-[10px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Resolusi Konflik</span><span class="px-2 py-0.5 text-[10px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Public Speaking</span><span class="px-2 py-0.5 text-[10px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Kaderisasi</span>
+                </div>
+              </div>
+  
+
+              <div class="relative pl-8 group">
+                <!-- Timeline dot with glowing effect -->
+                <div class="absolute left-0 top-1.5 w-2.5 h-2.5 rounded-full border-2 border-zinc-950 bg-accent glow-marker"></div>
+                
+                <div class="flex flex-wrap items-start justify-between gap-2 mb-2">
+                  <div>
+                    <h3 class="text-base font-bold text-white group-hover:text-white/90 transition-colors m-0">
+                      Koordinator Tim Sepakbola
+                    </h3>
+                    <p class="text-accent font-mono text-xs font-semibold m-0">
+                      Klub Olahraga Tangerang (Amatir)
+                    </p>
+                  </div>
+                  <span class="px-2 py-0.5 text-[10px] rounded-full border border-white/10 bg-white/5 font-mono text-zinc-400">
+                    2023 - Sekarang
+                  </span>
+                </div>
+
+                <p class="text-zinc-300 text-sm leading-relaxed mb-3 whitespace-pre-wrap">Mengkoordinasikan taktik bermain serta sesi latihan fisik berkala kelompok pemuda setempat. Menguatkan sinergi tim, kedisiplinan dan rasa kepemimpinan kolektif dalam kompetisi antar wilayah.</p>
+                
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="px-2 py-0.5 text-[10px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Team Building</span><span class="px-2 py-0.5 text-[10px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Koordinasi Finansial</span><span class="px-2 py-0.5 text-[10px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Manajemen Waktu</span><span class="px-2 py-0.5 text-[10px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Sinergi Grup</span>
+                </div>
+              </div>
+  
+              </div>
+            
+          </div>
+        </section>
+
+        <!-- Dynamic Projects & Web Contributions Section -->
+        <section class="bg-black/40 backdrop-blur-md border border-white/10 hover:border-cyan-500/25 transition-all duration-300 p-6 rounded-xl hover:border-white/10 transition-colors">
+          <h2 class="flex items-center gap-2.5 font-mono text-xs tracking-widest uppercase font-bold text-white mb-5 border-b border-white/5 pb-2.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><line x1="3" y1="12" x2="9" y2="12"></line><line x1="15" y1="12" x2="21" y2="12"></line></svg>
+            Proyek & Kontribusi Utama
+          </h2>
+          
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              
+              <div class="bg-zinc-900/40 border border-white/5 rounded-lg p-5 flex flex-col justify-between hover:border-white/15 transition-all group duration-300">
+                <div>
+                  <div class="flex items-start justify-between gap-2 mb-2">
+                    <h3 class="font-bold text-white group-hover:text-white/90 transition-colors text-sm m-0">Smart Hadroh Acoustic Balance Mixer</h3>
+                    <div class="flex gap-2">
+                      
+                        <a href="https://github.com/ahmadfikrimakhzumy/hadroh-mixer" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-white transition-colors">
+                          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                      
+                      
+                    </div>
+                  </div>
+                  <p class="text-zinc-400 text-xs leading-relaxed mb-4">Model sirkuit filter akustik analog kustom untuk meningkatkan kejelasan frekuensi instrumen hadroh tradisional, memitigasi dengung feedback frekuensi rendah.</p>
+                </div>
+                <div class="flex flex-wrap gap-1 mt-auto">
+                  <span class="px-1.5 py-0.5 text-[9px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Hardware Design</span><span class="px-1.5 py-0.5 text-[9px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Acoustics</span><span class="px-1.5 py-0.5 text-[9px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Sirkuit Analog</span><span class="px-1.5 py-0.5 text-[9px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Sistem Komputer</span>
+                </div>
+              </div>
+  
+
+              <div class="bg-zinc-900/40 border border-white/5 rounded-lg p-5 flex flex-col justify-between hover:border-white/15 transition-all group duration-300">
+                <div>
+                  <div class="flex items-start justify-between gap-2 mb-2">
+                    <h3 class="font-bold text-white group-hover:text-white/90 transition-colors text-sm m-0">Local Lab Node Network Setup</h3>
+                    <div class="flex gap-2">
+                      
+                        <a href="https://github.com/ahmadfikrimakhzumy/lab-node" target="_blank" rel="noopener noreferrer" class="text-zinc-500 hover:text-white transition-colors">
+                          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                      
+                      
+                    </div>
+                  </div>
+                  <p class="text-zinc-400 text-xs leading-relaxed mb-4">Konfigurasi server lokal berbasis Linux Debian di laboratorium kecil untuk mendistribusikan hak akses jaringan nirkabel statis nirkabel pemuda daerah.</p>
+                </div>
+                <div class="flex flex-wrap gap-1 mt-auto">
+                  <span class="px-1.5 py-0.5 text-[9px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Linux Debian</span><span class="px-1.5 py-0.5 text-[9px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">Networking</span><span class="px-1.5 py-0.5 text-[9px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">WLAN Control</span><span class="px-1.5 py-0.5 text-[9px] font-mono rounded bg-white/5 border border-white/10 text-zinc-400">IoT Devices</span>
+                </div>
+              </div>
+  
+            </div>
+          
+        </section>
+
+      </div>
+
+      <!-- RIGHT AREA: Skills, Education, Achievements -->
+      <div class="md:col-span-4 flex flex-col gap-8">
+        
+        <!-- Systems Skill Stack Radar Progress bars -->
+        <section class="bg-black/40 backdrop-blur-md border border-white/10 hover:border-cyan-500/25 transition-all duration-300 p-6 rounded-xl hover:border-white/10 transition-colors">
+          <h2 class="flex items-center gap-2.5 font-mono text-xs tracking-widest uppercase font-bold text-white mb-5 border-b border-white/5 pb-2.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2" ry="2"></rect><path d="M9 1v4m6-4v4M9 19v4m6-4v4m4-14h4m-4 6h4M1 9h4m-4 6h4"></path></svg>
+            Sistem Keahlian
+          </h2>
+          
+            <div class="flex flex-col gap-4.5">
+              
+              <div class="group">
+                <div class="flex justify-between items-center text-xs mb-1 font-mono">
+                  <span class="text-zinc-300 font-medium">Sistem Komputer & Mikrokontroler</span>
+                  <span class="text-accent font-bold">85%</span>
+                </div>
+                <div class="w-full bg-zinc-900 border border-white/5 h-1.5 rounded-full overflow-hidden">
+                  <div class="bg-accent h-full rounded-full transition-all duration-1000 origin-left scale-x-0" style="width: 85%;" data-level="85"></div>
+                </div>
+              </div>
+  
+
+              <div class="group">
+                <div class="flex justify-between items-center text-xs mb-1 font-mono">
+                  <span class="text-zinc-300 font-medium">Instalasi Jaringan & OS Linux</span>
+                  <span class="text-accent font-bold">80%</span>
+                </div>
+                <div class="w-full bg-zinc-900 border border-white/5 h-1.5 rounded-full overflow-hidden">
+                  <div class="bg-accent h-full rounded-full transition-all duration-1000 origin-left scale-x-0" style="width: 80%;" data-level="80"></div>
+                </div>
+              </div>
+  
+
+              <div class="group">
+                <div class="flex justify-between items-center text-xs mb-1 font-mono">
+                  <span class="text-zinc-300 font-medium">Manajemen Kepemimpinan & Organisasi</span>
+                  <span class="text-accent font-bold">92%</span>
+                </div>
+                <div class="w-full bg-zinc-900 border border-white/5 h-1.5 rounded-full overflow-hidden">
+                  <div class="bg-accent h-full rounded-full transition-all duration-1000 origin-left scale-x-0" style="width: 92%;" data-level="92"></div>
+                </div>
+              </div>
+  
+
+              <div class="group">
+                <div class="flex justify-between items-center text-xs mb-1 font-mono">
+                  <span class="text-zinc-300 font-medium">Hadroh (Seni Musik Religi)</span>
+                  <span class="text-accent font-bold">95%</span>
+                </div>
+                <div class="w-full bg-zinc-900 border border-white/5 h-1.5 rounded-full overflow-hidden">
+                  <div class="bg-accent h-full rounded-full transition-all duration-1000 origin-left scale-x-0" style="width: 95%;" data-level="95"></div>
+                </div>
+              </div>
+  
+
+              <div class="group">
+                <div class="flex justify-between items-center text-xs mb-1 font-mono">
+                  <span class="text-zinc-300 font-medium">Kerjasama Tim & Sepakbola</span>
+                  <span class="text-accent font-bold">90%</span>
+                </div>
+                <div class="w-full bg-zinc-900 border border-white/5 h-1.5 rounded-full overflow-hidden">
+                  <div class="bg-accent h-full rounded-full transition-all duration-1000 origin-left scale-x-0" style="width: 90%;" data-level="90"></div>
+                </div>
+              </div>
+  
+            </div>
+          
+        </section>
+
+        <!-- Academic and Academic certifications -->
+        <section class="bg-black/40 backdrop-blur-md border border-white/10 hover:border-cyan-500/25 transition-all duration-300 p-6 rounded-xl hover:border-white/10 transition-colors">
+          <h2 class="flex items-center gap-2.5 font-mono text-xs tracking-widest uppercase font-bold text-white mb-4 border-b border-white/5 pb-2.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5zM6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            Edukasi & Diklat
+          </h2>
+          
+            <div class="flex flex-col gap-5">
+              
+                  <div class="border-l-2 border-zinc-800 pl-4 py-0.5">
+                    <h4 class="font-bold text-sm text-zinc-100 m-0">S1 Sistem Komputer (Aktif)</h4>
+                    <p class="text-accent font-semibold text-xs font-mono mt-0.5 mb-0">Universitas Pamulang | 2024 - Sekarang</p>
+                    <p class="text-[11px] text-zinc-400 mt-1.5 mb-0 leading-relaxed whitespace-pre-wrap">Mempelajari fundamental arsitektur dan sistem organisasi komputer, pemrograman bahasa assembly, perancangan sirkuit digital terintegrasi, mikrokontroler (Arduino & ESP32), serta administrasi jaringan modern.</p>
+                  </div>
+  
+
+                  <div class="border-l-2 border-zinc-800 pl-4 py-0.5">
+                    <h4 class="font-bold text-sm text-zinc-100 m-0">Pendidikan Menengah & Keorganisasian</h4>
+                    <p class="text-accent font-semibold text-xs font-mono mt-0.5 mb-0">Pendidikan Menengah Atas | 2021 - 2024</p>
+                    <p class="text-[11px] text-zinc-400 mt-1.5 mb-0 leading-relaxed whitespace-pre-wrap">Mengembangkan kecerdasan kepemimpinan sosial dan vokal sebagai ketua umum forum rohani, aktif dalam lomba syiar agama serta festival kesenian hadroh.</p>
+                  </div>
+  
+            </div>
+          
+        </section>
+
+        <!-- Certifications and accomplishments -->
+        <section class="bg-black/40 backdrop-blur-md border border-white/10 hover:border-cyan-500/25 transition-all duration-300 p-6 rounded-xl hover:border-white/10 transition-colors">
+          <h2 class="flex items-center gap-2.5 font-mono text-xs tracking-widest uppercase font-bold text-white mb-4 border-b border-white/5 pb-2.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            Sertifikasi & Prestasi
+          </h2>
+          
+            <div class="flex flex-col gap-3">
+              
+                  <div class="flex items-start gap-3 bg-zinc-900/40 p-4 rounded-xl border border-white/5 hover:border-accent/15 transition-colors">
+                    <div class="text-accent p-1.5 bg-accent/5 rounded">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-xs text-zinc-100 m-0">Juara 1 Lomba Seni Musik Religi Hadroh</h4>
+                      <p class="text-[10px] text-zinc-400 m-0 mt-0.5">Lembaga Festival Pemuda Tangerang (2023)</p>
+                    </div>
+                  </div>
+  
+
+                  <div class="flex items-start gap-3 bg-zinc-900/40 p-4 rounded-xl border border-white/5 hover:border-accent/15 transition-colors">
+                    <div class="text-accent p-1.5 bg-accent/5 rounded">
+                      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-xs text-zinc-100 m-0">Juara 2 Lomba Syiar Ceramah Keagamaan</h4>
+                      <p class="text-[10px] text-zinc-400 m-0 mt-0.5">Yayasan Dakwah & Edukasi Islam (2022)</p>
+                    </div>
+                  </div>
+  
+            </div>
+          
+        </section>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="text-center font-mono text-[10px] text-zinc-600 mt-16 pb-8">
+    <p>UNIVERSAL PORTFOLIO PROTOCOL // DEPLOYED SECURELY // DESIGN INSPIRED BY KAI ZENITH</p>
+  </footer>
+
+  <!-- Script logic dependencies -->
+  <script src="script.js"></script>
+</body>
+</html>
